@@ -7,13 +7,13 @@
 
   "browser_action": {
     "default_title": "Wishlist",
-    "default_icon": "icons/16x16.png"
+    "default_icon": "icons/icon21.png"
   },
 
   "icons": {
-    "16": "icons/16x16.png",
-    "48": "icons/48x48.png",
-    "128": "icons/128x128.png"
+    "16": "icons/icon21.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   },
 
   "background": {
@@ -28,5 +28,5 @@
     "storage"
   ],
 
-  "content_security_policy": "script-src 'self' http://localhost:3000/; object-src 'self'"
+  "content_security_policy": "script-src 'self' https://w1shlist.herokuapp.com/; object-src 'self'"
 }

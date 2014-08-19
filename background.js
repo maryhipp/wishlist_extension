@@ -10,7 +10,7 @@ chrome.runtime.onMessage.addListener(function (request) {
   console.log(request)
   chrome.tabs.executeScript(null, { file: 'reset.js' });
   $.ajax({
-    url: "http://localhost:3000/items",
+    url: "https://w1shlist.herokuapp.com/items",
     type: "POST",
     contentType: "application/json",
     dataType: "json",
@@ -23,8 +23,6 @@ chrome.runtime.onMessage.addListener(function (request) {
     }),
     beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))}
   })
-
-
 });
 
 function getCurrentTab() {
